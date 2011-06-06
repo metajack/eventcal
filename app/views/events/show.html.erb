@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @event.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @event.description %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @event.location %>
+</p>
+
+<p>
+  <b>More info:</b>
+  <%= @event.more_info %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @event.image_url %>
+</p>
+
+<p>
+  <b>Contact name:</b>
+  <%= @event.contact_name %>
+</p>
+
+<p>
+  <b>Contact email:</b>
+  <%= @event.contact_email %>
+</p>
+
+<p>
+  <b>Contact phone:</b>
+  <%= @event.contact_phone %>
+</p>
+
+<p>
+  <b>Submitter:</b>
+  <%= @event.submitter %>
+</p>
+
+<p>
+  <b>Approved:</b>
+  <%= @event.approved %>
+</p>
+
+<p>
+  <b>Visible:</b>
+  <%= @event.visible %>
+</p>
+
+<p>
+  <b>Featured:</b>
+  <%= @event.featured %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

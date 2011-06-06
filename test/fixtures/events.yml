@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  location: MyString
+  more_info: MyString
+  image_url: MyString
+  contact_name: MyString
+  contact_email: MyString
+  contact_phone: MyString
+  submitter: MyString
+  approved: false
+  visible: false
+  featured: false
+
+two:
+  title: MyString
+  description: MyText
+  location: MyString
+  more_info: MyString
+  image_url: MyString
+  contact_name: MyString
+  contact_email: MyString
+  contact_phone: MyString
+  submitter: MyString
+  approved: false
+  visible: false
+  featured: false

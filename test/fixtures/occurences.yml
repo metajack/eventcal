@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2011-06-06
+  time: 2011-06-06 13:49:52
+  duration: 1.5
+
+two:
+  date: 2011-06-06
+  time: 2011-06-06 13:49:52
+  duration: 1.5

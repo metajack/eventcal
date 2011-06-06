@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Netid:</b>
+  <%= @admin.netid %>
+</p>
+
+<p>
+  <b>Can approve:</b>
+  <%= @admin.can_approve %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_path(@admin) %> |
+<%= link_to 'Back', admins_path %>
