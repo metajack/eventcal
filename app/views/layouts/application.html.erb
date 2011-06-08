@@ -1,14 +1,71 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>EventCal</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+	<!-- Meta information -->
+	<meta charset="utf-8" />
+
+	<!-- Document information -->
+	<title>HSLIC Service Catalog: UNM Health Sciences Center</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="copyright" content="Design and Layout Copyright 2011 University of New Mexico" />
+	<meta name="author" content="HSC Web Team" />
+	<link rel="shortcut icon" href="/images/common/unm.ico" />
+	
+	<!-- HTML 5 Elements for older IE -->
+	<!--[if lt IE 9]>
+	<script>
+	  var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+		"figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+		"progress,section,time,video").split(',');
+	  for (var i = 0; i < e.length; i++) {
+		document.createElement(e[i]);
+	  }
+	</script>
+	<![endif]-->	
+	
+
+
+        <%= stylesheet_link_tag 'blueprint/screen', 'localstyle' %>
+        <%= javascript_include_tag :defaults %>
+        <%= csrf_meta_tag %>
+
 </head>
+
 <body>
+<header id="unm_header" class="screenonly">
+	<div class="header_content">
+		<div id="skipnav"><a accesskey="2" href="#content" tabindex="1">Skip to Main Content</a> <span class="hide">|</span> <a accesskey="1" href="http://www.unm.edu">UNM Homepage</a> <span class="hide">|</span> <a accesskey="0" href="http://www.unm.edu/accessibility.html">Accessibility Statement</a></div>
+
+		<div class="unm_header_title"><a href="http://www.unm.edu/" title="The University of New Mexico">The University of New Mexico</a></div>
+		<div id="unm_header_links">
+		<ul title="global UNM navigation">
+			<li><a href="http://www.unm.edu/depart.html" title="UNM A to Z">UNM A-Z</a></li>
+			<li><a href="http://hscapp.unm.edu/intranet/" title="HSC Intranet">HSC Intranet</a></li>
+			<li><a href="http://fastinfo.unm.edu" title="FastInfo">FastInfo</a></li>
+			<li><a href="https://my.unm.edu" title="myUNM">myUNM</a></li>
+			<li><a href="http://directory.unm.edu" title="Directory">Directory</a></li>
+		</ul>
+		<form action="http://google.unm.edu/search" id="unm_search_form" method="get">
+		<fieldset><input name="site" type="hidden" value="UNM"/> <input name="client" type="hidden" value="UNM"/> <input name="proxystylesheet" type="hidden" value="UNM"/> <input name="output" type="hidden" value="xml_no_dtd"/> <input accesskey="4" class="search_query" id="unm_search_form_q" maxlength="255" name="q" type="text"/> <input accesskey="s" alt="search now" class="search_button" id="unm_search_for_submit" name="submit" src="http://webcore.unm.edu/v1/images/search.gif" type="image"/></fieldset>
+		</form>
+		</div>
+	</div>
+</header>
+
+<section class="container">
+<header id="dept_header" class="span-24 last">
+	<a href="index.html"><img alt="HSC App Template" src="/images/hslic_logo.gif"/></a>
+</header>
 
 <%= yield %>
 
+</section>
+
+<footer id="unm_footer">
+	<p>&#169; The University of New Mexico, Albuquerque, NM 87131, (505) 277-0111<br/>New Mexico's Flagship University</p>
+	<ul id="unm_footer_links" class="screenonly"><li><a href="http://www.unm.edu/accessibility.html">Accessibility</a></li><li><a href="http://www.unm.edu/legal.html">Legal</a></li><li><a href="http://www.unm.edu/website_comments.html">Website Comments</a></li><li><a href="http://www.unm.edu/contactunm.html">Contact UNM</a></li></ul>
+</footer>
 </body>
 </html>

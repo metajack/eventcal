@@ -1,0 +1,47 @@
+/** -- UNM consolidated CSS -- **/
+.cherry{color:#c10037;}
+.teal{color:#0091C5;}
+
+#skipnav a,#skipnav a:hover,#skipnav a:visited{position:absolute;left:0px;top:-500px;width:1px;height:1px;overflow:hidden;color:#FFF;}
+#skipnav ul:active,#skipnav a:active,#skipnav a:focus{position:static;width:auto;height:auto;}
+
+#unm_header{background-color:#5E5D60;border-top:1px solid #232323;border-bottom:1px solid #232323;height:auto;overflow:auto;}
+#unm_header_links a{text-decoration:none;}
+.unm_header_title{float:left;padding-left:20px;padding-top:1px;}
+.unm_header_title a{color:#fff;text-decoration:none;font-size:.95em;font-weight:bold;line-height:1.5em;}
+.header_content{margin:0 auto;overflow:visible;padding:1px 0 2px 0;}
+#unm_logo{z-index:10;margin:0;vertical-align:top;float:left;}
+#unm_header_links{background:none;text-align:right;margin:0;padding:0 0 0 0;}
+#unm_header_links ul{margin:0;padding:0;display:inline;}
+#unm_header_links li{display:inline;list-style-type:none;padding:0 0 0 10px;margin:0;}
+#unm_header_links li a{color:#fff;font-size:.95em;font-weight:bold;line-height:1.5em;}
+#unm_header_links li a:hover{color:#eee;}
+#unm_search_form{text-align:right;font-size:1em;color:#FFF;font-weight:bold;margin:0 0 0 10px;padding:0;white-space:nowrap;display:inline;}
+#unm_search_form div{display:inline !important}
+#unm_search_form fieldset{padding:0;margin:0;border:0;display:inline;padding-right:20px;}
+#unm_search_form input{margin:0;vertical-align:middle;border:0;height:16px;}
+#unm_search_form p{margin:0;padding:0;}
+#unm_search_form label{margin:0;display:none;}
+#unm_search_form .search_button{background-color:transparent;margin:0;padding:0;border:0;}
+#unm_search_form .search_button:hover{background-color:#e97d1f;}
+#unm_search_form input.image_button{background-color:transparent;border:0;}
+#unm_search_form label.search_query_label{color:#fff;}
+
+#dept_logo{clear:both;margin:5px 1px;}
+#banner_image{clear:both;text-align:center;margin:0 0 1px 0;padding:0;height:125px;}
+
+header{margin:0; padding:0;}
+
+footer{margin:1em 0;clear:both;font-size:.9em;line-height:.9em;}
+footer{padding:1em 0;margin:1em 1.75em;text-align:right; border-top: 2px solid black;}
+footer p{margin:0;display:block;float:left;text-align:left;}
+ul#unm_footer_links{margin:0;padding:0;display:inline;}
+ul#unm_footer_links li{display:inline;list-style-type:none;padding:0;margin:0 1em 0 0;}
+
+/** -- HSLIC App Specific CSS -- **/
+.cell_c{text-align:center;}
+.cell_r{text-align:right;}
+.cell_coltot{}
+tr.row_subtot td{font-style:italic;border-top: 1px solid #999;}
+tr.row_grandtot td{background-color:#C3D9FF;font-weight:bold;border-top:3px double black;}
+.editable{background-color:#FC9 !important;}
