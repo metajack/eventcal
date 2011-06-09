@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110606194952) do
+ActiveRecord::Schema.define(:version => 20110609050449) do
 
   create_table "admins", :force => true do |t|
     t.string   "netid"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20110606194952) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "department_id"
   end
 
   create_table "events", :force => true do |t|
