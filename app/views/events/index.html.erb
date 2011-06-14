@@ -1,45 +1,9 @@
-<h1>Listing events</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Location</th>
-    <th>More info</th>
-    <th>Image url</th>
-    <th>Contact name</th>
-    <th>Contact email</th>
-    <th>Contact phone</th>
-    <th>Submitter</th>
-    <th>Approved</th>
-    <th>Visible</th>
-    <th>Featured</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Health Sciences Center Events</h1>
 
 <% @events.each do |event| %>
-  <tr>
-    <td><%= event.title %></td>
-    <td><%= event.description %></td>
-    <td><%= event.location %></td>
-    <td><%= event.more_info %></td>
-    <td><%= event.image_url %></td>
-    <td><%= event.contact_name %></td>
-    <td><%= event.contact_email %></td>
-    <td><%= event.contact_phone %></td>
-    <td><%= event.submitter %></td>
-    <td><%= event.approved %></td>
-    <td><%= event.visible %></td>
-    <td><%= event.featured %></td>
-    <td><%= link_to 'Show', event %></td>
-    <td><%= link_to 'Edit', edit_event_path(event) %></td>
-    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <%= render event %>
 <% end %>
-</table>
 
 <br />
 
-<%= link_to 'New Event', new_event_path %>
+<p align="right"><%= link_to 'Add a New Event', new_event_path %></p>
